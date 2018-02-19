@@ -19,7 +19,7 @@ matrix:
   fast_finish: true
 
 install:
-  - bash scripts/install_deps.sh
+  - bash scripts/travis_install_deps.sh
   - bash scripts/create_fork_files.sh
   - ansible-galaxy install -r requirements.yml --force
 
